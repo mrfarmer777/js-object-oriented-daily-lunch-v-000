@@ -116,4 +116,11 @@ class Delivery{
     });
   }
   
+  customer(){
+    let custId=this.customerId;
+    return store.customers.find(function(cust){
+      return cust.id===custId;
+    })
+  }
+  
 }
