@@ -9,7 +9,7 @@ class Neighborhood{
   constructor(name){
     this.id=++nId;
     this.name=name;
-    store.deliveries.push(this);
+    store.neighborhoods.push(this);
   }
   
   deliveries(){
