@@ -15,7 +15,7 @@ class Neighborhood{
   deliveries(){
     let id=this.id;
     return store.deliveries.filter(function(del){
-      return del.neighorhoodId===id;
+      return del.neighborhoodId===id;
     });
   }
   
