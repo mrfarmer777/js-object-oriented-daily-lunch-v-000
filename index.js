@@ -24,7 +24,7 @@ class Neighborhood{
     let customers=[];
     this.deliveries().forEach(function(del){
       if(customers.includes(del.customer()===false)){
-                customers.push(del.customer());
+         customers.push(del.customer());
       }
     });
     console.log(customers);
