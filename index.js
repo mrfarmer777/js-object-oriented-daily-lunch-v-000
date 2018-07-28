@@ -81,6 +81,8 @@ class Meal{
     store.meals.push(this);
   }
   
+  static 
+  
   deliveries(){
     let id=this.id;
     return store.deliveries.filter(function(del){
