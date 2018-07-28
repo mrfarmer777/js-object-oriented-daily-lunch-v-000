@@ -120,7 +120,14 @@ class Delivery{
     let custId=this.customerId;
     return store.customers.find(function(cust){
       return cust.id===custId;
-    })
+    });
+  }
+  
+  neighborhood(){
+    let neighId=this.neighborhoodId;
+    return store.neighborhoods.find(function(neigh){
+      return neigh.id===neighId;
+    });
   }
   
 }
