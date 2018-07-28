@@ -53,8 +53,8 @@ class Customer{
   
   meals(){
     let meals=[];
-    this.deliveries.forEach(function(del){
-      meals.push(del.meal);
+    this.deliveries().forEach(function(del){
+      meals.push(del.meal());
     });
     return meals;
   }
@@ -82,6 +82,16 @@ class Meal{
       return del.mealId===id;
     });
   }
+  
+  customers(){
+    let customers=[];
+    this.deliveries().forEach(function(del){
+      customers.push(del.customer());
+    });
+    return customers;
+  }
+  
+  
 }
 
 
