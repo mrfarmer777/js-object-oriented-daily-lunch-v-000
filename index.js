@@ -21,8 +21,9 @@ class Neighborhood{
   
   customers(){
     let id=this.id;
-    return store.customers.filter(function(cust){
-      return cust.neighbordhoodId===id;
+    let customers=[];
+    this.deliveries.forEach(function(del){
+      customers.push(del.customer());
     });
   }
   
