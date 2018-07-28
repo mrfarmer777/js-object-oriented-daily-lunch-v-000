@@ -1,6 +1,8 @@
 // global datastore
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
+
+//NEIGHBORHOOD CLASS///////////
 let nId=0;
 class Neighborhood{
   
@@ -12,6 +14,8 @@ class Neighborhood{
   
 }
 
+
+//CUSTOMER CLASS////////////////
 let cId=0;
 class Customer{
   contructor(name,neighborhood){
@@ -21,4 +25,10 @@ class Customer{
   }
   
   
+}
+
+//DELIVERY CLASS////////////////
+let dId=0;
+class Delivery{
+  constructor()
 }
