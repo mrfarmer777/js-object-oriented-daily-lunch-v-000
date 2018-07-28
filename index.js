@@ -52,7 +52,14 @@ class Customer{
   }
   
   meals(){
-    
+    let meals=[];
+    this.deliveries.forEach(function(del){
+      meals.push(del.meal);
+    });
+  }
+  
+  totalSpent(){
+    //save for last
   }
   
   
