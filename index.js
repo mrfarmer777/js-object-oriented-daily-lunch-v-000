@@ -27,8 +27,27 @@ class Customer{
   
 }
 
+//MEAL CLASS////////////////////
+let mId=0;
+class Meal{
+  constructor(title,price){
+    this.id=++mId;
+    this.title=title;
+    this.price=price;
+  }
+}
+
+
+
+
+
 //DELIVERY CLASS////////////////
 let dId=0;
 class Delivery{
-  constructor()
+  constructor(meal,neighborhood,customer){
+    this.id=++dId;
+    this.mealId=meal.id;
+    this.neighborhoodId=neighbordhood.id;
+    this.customerId=customer.id;
+  }
 }
