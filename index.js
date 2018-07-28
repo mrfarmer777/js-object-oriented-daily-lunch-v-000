@@ -44,6 +44,17 @@ class Customer{
     store.customers.push(this);
   }
   
+  deliveries(){
+    let id=this.id;
+    return store.deliveries.filter(function(del){
+      return del.customerId===id;
+    });
+  }
+  
+  meals(){
+    
+  }
+  
   
 }
 
