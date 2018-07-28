@@ -81,7 +81,7 @@ class Meal{
     store.meals.push(this);
   }
   
-  deliveres(){
+  deliveries(){
     let id=this.id;
     return store.deliveries.filter(function(del){
       return del.mealId===id;
