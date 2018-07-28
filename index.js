@@ -22,10 +22,9 @@ class Neighborhood{
   customers(){
     let id=this.id;
     let customers=[];
-    this.deliveries.forEach(function(del){
+    return this.deliveries.forEach(function(del){
       customers.push(del.customer());
     });
-    return customers;
   }
   
   meals(){
