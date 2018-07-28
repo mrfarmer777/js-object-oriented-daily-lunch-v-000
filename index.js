@@ -56,6 +56,7 @@ class Customer{
     this.deliveries.forEach(function(del){
       meals.push(del.meal);
     });
+    return meals;
   }
   
   totalSpent(){
@@ -73,6 +74,13 @@ class Meal{
     this.title=title;
     this.price=price;
     store.meals.push(this);
+  }
+  
+  deliveres(){
+    let id=this.id;
+    return store.deliveries.filter(function(del){
+      return del.mealId===id;
+    });
   }
 }
 
