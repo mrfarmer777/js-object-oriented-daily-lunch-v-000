@@ -23,7 +23,7 @@ class Neighborhood{
     let id=this.id;
     let customers=[];
     this.deliveries().forEach(function(del){
-      if(customers.includes(del.customer()===false)){
+      if(customers.includes(del.customer())===false){
          customers.push(del.customer());
       }
     });
