@@ -25,6 +25,7 @@ class Neighborhood{
     this.deliveries.forEach(function(del){
       customers.push(del.customer());
     });
+    return custom
   }
   
   meals(){
