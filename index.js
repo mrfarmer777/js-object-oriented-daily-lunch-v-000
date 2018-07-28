@@ -32,7 +32,13 @@ class Neighborhood{
   }
   
   meals(){
-    //do this last
+    let meals=[];
+    return this.deliveries().forEach(function(del){
+      if(meals.includes(del.meal())===false){
+        meals.push(del.meal());
+      }
+      return meal;
+    });
   }
   
   
