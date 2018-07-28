@@ -108,4 +108,10 @@ class Delivery{
     this.customerId=customerId;
     store.deliveries.push(this);
   }
+  
+  meal(){
+    let id=this.id;
+    return store.meals
+  }
+  
 }
