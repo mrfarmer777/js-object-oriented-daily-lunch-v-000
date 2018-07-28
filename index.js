@@ -110,8 +110,10 @@ class Delivery{
   }
   
   meal(){
-    let id=this.id;
-    return store.meals
+    let id=this.mealId;
+    return store.meals.find(function(meal){
+      return meal.id===mealId;
+    });
   }
   
 }
