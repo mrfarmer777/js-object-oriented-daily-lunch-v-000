@@ -19,6 +19,17 @@ class Neighborhood{
     });
   }
   
+  customers(){
+    let id=this.id;
+    return store.customers.filter(function(cust){
+      return cust.neighbordhoodId===id;
+    });
+  }
+  
+  meals(){
+    //do this last
+  }
+  
   
 }
 
