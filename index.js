@@ -21,7 +21,7 @@ class Customer{
   contructor(name,neighborhood){
     this.id=++cId;
     this.name=name;
-    this.neighorhoodId=neighbordhood.id; //a foreign key
+    this.neighorhoodId=neighborhood.id; //a foreign key
   }
   
   
