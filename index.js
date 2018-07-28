@@ -37,8 +37,8 @@ class Neighborhood{
       if(meals.includes(del.meal())===false){
         meals.push(del.meal());
       }
-      return meals;
     });
+    return meals;
   }
   
   
