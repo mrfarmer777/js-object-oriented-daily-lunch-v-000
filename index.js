@@ -9,6 +9,7 @@ class Neighborhood{
   constructor(name){
     this.id=++nId;
     this.name=name;
+    store.deliveries.push(this);
   }
   
   deliveries(){
@@ -29,6 +30,7 @@ class Customer{
     this.id=++cId;
     this.name=name;
     this.neighorhoodId=neighborhood.id; //a foreign key
+    store.customers.push(this);
   }
   
   
@@ -41,6 +43,7 @@ class Meal{
     this.id=++mId;
     this.title=title;
     this.price=price;
+    store.meals.push(this);
   }
 }
 
@@ -56,5 +59,6 @@ class Delivery{
     this.mealId=meal.id;
     this.neighborhoodId=neighborhood.id;
     this.customerId=customer.id;
+    store.deliveries.push(this);
   }
 }
