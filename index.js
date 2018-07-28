@@ -40,7 +40,7 @@ class Customer{
   constructor(name,neighborhood){
     this.id=++cId;
     this.name=name;
-    this.neighborhoodId=neighborhood.id; //a foreign key
+    this.neighbordhoodId=neighborhood.id; //a foreign key
     store.customers.push(this);
   }
   
