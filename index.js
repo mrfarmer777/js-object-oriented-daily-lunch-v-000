@@ -11,6 +11,13 @@ class Neighborhood{
     this.name=name;
   }
   
+  deliveries(){
+    let id=this.id;
+    return store.deliveries.filter(function(del){
+      return del.neighorhoodId===id;
+    })
+  }
+  
   
 }
 
