@@ -65,7 +65,7 @@ class Customer{
   }
   
   totalSpent(){
-    return this.meals.reduce(function(agg,el,ind,arr){
+    return this.meals().reduce(function(agg,el,ind,arr){
       return agg+el.price;
     });
   }
