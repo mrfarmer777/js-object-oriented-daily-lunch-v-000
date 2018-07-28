@@ -18,7 +18,7 @@ class Neighborhood{
 //CUSTOMER CLASS////////////////
 let cId=0;
 class Customer{
-  contructor(name,neighborhood){
+  constructor(name,neighborhood){
     this.id=++cId;
     this.name=name;
     this.neighorhoodId=neighborhood.id; //a foreign key
