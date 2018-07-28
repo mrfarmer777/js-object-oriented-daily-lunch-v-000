@@ -81,7 +81,9 @@ class Meal{
     store.meals.push(this);
   }
   
-  static 
+  static byPrice(){
+    
+  }
   
   deliveries(){
     let id=this.id;
